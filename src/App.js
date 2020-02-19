@@ -21,7 +21,8 @@ function App() {
   <div className="App" >
     <Router>
       <div>
-        <nav>
+      <Navbar1/> 
+        {/* <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -33,19 +34,16 @@ function App() {
               <Link to="/users">Users</Link>
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
-          <Caraousel/>
-          </Route>
-          <Route path="/users">
-          <Mainarea/>
-          </Route>
-          <Route path="/">
-          <Navbar1/> 
+          <Route path="/create" exact component={Caraousel}/>
+          
+          <Route path="/users" component={Mainarea}/>
+          
+          <Route path="/" component={Middlearea} >
           </Route>
         </Switch>
       </div>
