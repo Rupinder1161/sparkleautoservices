@@ -205,7 +205,7 @@ export default function Pricing() {
         </Grid>
       </Container>
       {/* Footer */}
-      <Container maxWidth="md" component="footer" className={classes.footer}>
+      {/* <Container maxWidth="md" component="footer" className={classes.footer}>
         <Grid container spacing={4} justify="space-evenly">
           {footers.map(footer => (
             <Grid item xs={6} sm={3} key={footer.title}>
@@ -227,7 +227,7 @@ export default function Pricing() {
         <Box mt={5}>
           <Copyright />
         </Box>
-      </Container>
+      </Container> */}
       {/* End footer */}
     </React.Fragment>
   );

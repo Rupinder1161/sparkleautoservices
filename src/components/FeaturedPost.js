@@ -5,7 +5,13 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
-import Posts from './Posts'
+import Posts from './Posts';
+import Pricing from './Pricing'
+import './main.css'
+import Mainform from './Mainform'
+import Promise from './Promise'
+import classNames from 'classnames'
+import Contactform from './Contactform'
 
 const useStyles = makeStyles(theme => ({
   mainFeaturedPost: {
@@ -36,18 +42,19 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+
 const mainFeaturedPost = {
-  title: 'Title of a longer featured blog post',
+  title: 'Book With Us',
   description:
     "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-  image: 'https://source.unsplash.com/random',
+  image: 'https://cdn.pixabay.com/photo/2014/06/04/16/36/car-repair-362150_1280.jpg',
   imgText: 'main image description',
   linkText: 'Continue reading…',
 };
 
 export default function MainFeaturedPost() {
   const classes = useStyles();
-
+  const btn1 = classNames('btn','btn-warning','btn-lg','btn-shadow')
   return (
     <div>
     <Paper className={classes.mainFeaturedPost} style={{ backgroundImage: `url(${mainFeaturedPost.image})` }}>
@@ -57,8 +64,8 @@ export default function MainFeaturedPost() {
       <Grid container>
         <Grid item md={6}>
           <div className={classes.mainFeaturedPostContent}>
-            <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-              {mainFeaturedPost.title}
+            <Typography component="h1" variant="h3" style={{color:"yellow", radius:"2px solid black",textShadow:"0px 30px 20px "}} gutterBottom>
+              <button className ={btn1}>{mainFeaturedPost.title}</button>
             </Typography>
             <Typography variant="h5" color="inherit" paragraph>
               {mainFeaturedPost.description}
@@ -69,8 +76,13 @@ export default function MainFeaturedPost() {
           </div>
         </Grid>
       </Grid>
+    
     </Paper>
+    
     <Posts/>
+    <Promise />
+    <Pricing />
+    <Mainform/>
     </div>
   );
 }

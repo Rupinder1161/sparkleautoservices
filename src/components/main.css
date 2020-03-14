@@ -1,4 +1,117 @@
-.border{
+.border {
     border: 1px solid red;
     box-shadow: 5px 10px;
 }
+.red {
+    display: flex;
+    flex-flow: row wrap;
+   align-items: center;
+   justify-content: center;
+   background-color:#4a148c ;
+   
+}
+.float {
+    animation: float 3s ease-in-out infinite;
+    
+    box-shadow: 25px 100px;
+    color: purple;
+    font-weight: bolder;
+    fill: rebeccapurple;
+}
+@keyframes float {
+	0% {
+        transform: translatey(0px);
+       
+	}
+	50% {	
+        transform: translatey(50px);
+        color:rgb(98, 80, 157);
+	}
+	100% {
+        transform: translatey(0px);
+        color:black;
+	}
+}
+.map-container-3{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-3 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+ .more-info{
+        width: 45%;
+        line-height: 75px;
+        /* display: flex;
+        flex-flow: column wrap; */
+        
+    }
+
+ .typo{
+     color:black;
+     padding-top: 10px;
+ }
+  /* .more-info:hover{
+      background-color: darkred;
+  } */
+    .maintitile{
+        color: blanchedalmond;
+        border-radius: 1px solid transparent;
+        box-shadow: 0px 5px 5px 5px 5px black;
+        background-color: transparent;
+    }
+      svg {
+        width: 100%;
+      }
+      
+      #houses {
+        animation: 10s road infinite linear;
+      }
+      #road {
+        animation: 4s road infinite linear;
+      }
+      
+      @keyframes road {
+        from {
+        }
+        to {
+          -moz-transform: translateX(-1800px);
+          -webkit-transform: translateX(-1800px);
+          -o-transform: translateX(-1800px);
+          -ms-transform: translateX(-1800px);
+          transform: translateX(-1800px);
+        }
+      }
+      #part, #car {
+        animation: 2s car infinite;
+      }
+      
+      @keyframes car {
+        from {
+        }
+        50% {
+          -moz-transform: translateY(10px);
+          -webkit-transform: translateY(10px);
+          -o-transform: translateY(10px);
+          -ms-transform: translateY(10px);
+          transform: translateY(10px);
+        }
+        to {
+        }
+      }
+      
+    .btn-shadow{
+      radius:1px solid yellow;
+      box-shadow: 20px 10px 20px yellow,
+    }
+
+
+
+
+    

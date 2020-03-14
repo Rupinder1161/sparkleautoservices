@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const style ={ 
       lg:{
@@ -39,19 +40,62 @@ export class Footer extends Component {
 
     render() {
         return (      
-                    <Container fluid style={style.lg}>
-                            <Row>
-                                     <Col><h5>Services</h5></Col>
-                              <Col><h5>Services</h5></Col>   
-                              <Col><h5>About us</h5></Col>
-                            </Row>
-                            <Row>
-                              <Col>1 of 1</Col>
-                              <Col>1 of 2</Col>
-                              <Col>1 of 3</Col>
-                            </Row>
-                            <h6>copyright @2019 sparkleAutorepairs.com</h6>
-                     </Container>
+            <footer class="page-footer font-small unique-color-dark">
+
+            <div style="background-color: #6351ce;">
+              <div class="container">
+          
+            
+                <div class="row py-4 d-flex align-items-center">
+          
+                  
+                  <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0">Get connected with us on social networks!</h6>
+                  </div>
+              
+          
+                 
+                  <div class="col-md-6 col-lg-7 text-center text-md-right">
+          
+                   
+                    <a class="fb-ic">
+                      <i class="fab fa-facebook-f white-text mr-4"> </i>
+                    </a>
+                    
+                    <a class="tw-ic">
+                      <i class="fab fa-twitter white-text mr-4"> </i>
+                    </a>
+                    
+                    <a class="gplus-ic">
+                      <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                    </a>
+                    
+                    <a class="li-ic">
+                      <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                    </a>
+                    
+                    <a class="ins-ic">
+                      <i class="fab fa-instagram white-text"> </i>
+                    </a>
+          
+                  </div>
+                  
+          
+                </div>
+               
+          
+              </div>
+            </div>
+          
+            
+           
+            
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+              <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+            </div>
+            
+          
+          </footer>
                 
     
         )

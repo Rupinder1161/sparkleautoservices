@@ -9,6 +9,7 @@ import Nav from 'react-bootstrap/Nav'
 import Link from 'react-bootstrap/NavLink'
 import { NavLink } from 'react-router-dom';
 
+
 const style = {
     navbar:{
       display:'flex',

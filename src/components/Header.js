@@ -7,15 +7,18 @@ import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+import './main.css';
+import SVG from '../Svg'
+import SVG2  from './Svg2'
+
+
 
 const sections = [
-    { title: 'Technology', url: '#',MainTitle:'SparkleAutoServices' },
-    { title: 'Design', url: '/user' },
-    { title: 'Culture', url: '/app' },
-    { title: 'Business', url: '/approoved' },
-    { title: 'Politics', url: '#' },
-    { title: 'Opinion', url: '#' },
-    
+    { title: 'Home', url: '/create',MainTitle:'SparkleAutoServices'},
+    { title: 'Services', url: '/user' },
+    { title: 'Deals', url: '/recent' },
+    { title: 'Book In Your Vehicle', url: '/createee',MainTitle:'SparkleAutoServices'},
+    { title: 'Make An Inquiry', url: '/Inquiry' },
   ];
 
 const useStyles = makeStyles(theme => ({
@@ -33,16 +36,19 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(1),
     flexShrink: 0,
   },
+  animation:{
+    animation: 'float 6s ease-in-out infinite',
+  }
 }));
 
 export default function Header() {
-  const classes = useStyles();
-  
-
+  const classes = useStyles(); 
+ 
   return (
     <React.Fragment>
-      <Toolbar className={classes.toolbar}>
-        <Button size="small">Subscribe</Button>
+      
+      <Toolbar className={classes.toolbar} style={{backgroundColor:"white",borderBottom:"1px solid purple",boxShadow:'0 5px 10px purple' }}>
+        <Button size="small" className="border red">Subscribe</Button>
         <Typography
           component="h2"
           variant="h5"
@@ -51,13 +57,24 @@ export default function Header() {
           noWrap
           className={classes.toolbarTitle}
         >
-          {sections[0].MainTitle}
+      
+      <span className="maintitile"> 
+      <SVG2/>
+       </span>
+         {sections[0].MainTitle}
+          {/* <car>
+             */}
+
+
+
+
+          {/* </car> */}
         </Typography>
         <IconButton>
           <SearchIcon />
         </IconButton>
-        <Button variant="outlined" size="small">
-          Sign up
+        <Button variant="outlined" size="small" className="border">
+          sign up
         </Button>
       </Toolbar>
       <Toolbar component="nav" variant="dense" className={classes.toolbarSecondary}>
@@ -68,12 +85,12 @@ export default function Header() {
             key={section.title}
             variant="body2"
             href={section.url}
-            className={classes.toolbarLink}
-          >
+            className={classes.toolbarLink}>
             {section.title}
           </Link>
         ))}
       </Toolbar>
+      {/* <SVG/> */}
     </React.Fragment>
   );
 }

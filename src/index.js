@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import GoogleApiWrapper from './components/MapContainer'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

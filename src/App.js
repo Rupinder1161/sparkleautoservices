@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+
 
 import {
   BrowserRouter as Router,
@@ -17,7 +17,9 @@ import Pricing from './components/Pricing'
 import Header from './components/Header'
 import FeaturedPost from './components/FeaturedPost'
 import Posts from './components/Posts'
-
+import Promise from './components/Promise'
+import Contactform from './components/Contactform'
+import Wof from './components/Wof'
 
 function App() {
 
@@ -26,37 +28,16 @@ function App() {
     <Router>
       <div>
         <Header/>
-      {/* <Navbar1/>  */}
-        {/* <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav> */}
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/createee" exact component={Caraousel}/>      
-          <Route path="/user" component={FeaturedPost}/>     
-          <Route path="/" component={Pricing} />
-          <Route path="/approoved" component={Posts} />
-          <Route path="/app" component={Pricing}/>
+          <Route path="/create" exact component={FeaturedPost}/>      
+          <Route path="/user" component={Pricing}/>     
+          <Route path="/createee" component={Contactform} />
+          <Route path="/recent" component={Wof} />
+          <Route path="/approoved" component={FeaturedPost}/> 
+          <Route path="/services" component={Contactform}/>
         </Switch>
       </div>
     </Router>
-   {/* <Navbar1/>          
-   <Caraousel/>
-   <Mainarea/>
-   <Middlearea/>
-   <Footer/> */}
    </div>
   );
 }
