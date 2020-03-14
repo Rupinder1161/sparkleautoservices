@@ -13,6 +13,10 @@ import Mainarea from './components/Mainarea'
 import Middlearea from './components/Middlearea'
 import Footer from './components/Footer'
 import Navbar1 from './components/Navbar'
+import Pricing from './components/Pricing'
+import Header from './components/Header'
+import FeaturedPost from './components/FeaturedPost'
+import Posts from './components/Posts'
 
 
 function App() {
@@ -21,7 +25,8 @@ function App() {
   <div className="App" >
     <Router>
       <div>
-      <Navbar1/> 
+        <Header/>
+      {/* <Navbar1/>  */}
         {/* <nav>
           <ul>
             <li>
@@ -39,12 +44,11 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/create" exact component={Caraousel}/>
-          
-          <Route path="/users" component={Mainarea}/>
-          
-          <Route path="/" component={Middlearea} >
-          </Route>
+          <Route path="/createee" exact component={Caraousel}/>      
+          <Route path="/user" component={FeaturedPost}/>     
+          <Route path="/" component={Pricing} />
+          <Route path="/approoved" component={Posts} />
+          <Route path="/app" component={Pricing}/>
         </Switch>
       </div>
     </Router>
