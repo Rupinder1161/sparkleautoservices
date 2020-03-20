@@ -30,7 +30,7 @@ function App() {
       <div>
         <Header/>
         <Switch>
-          <Route path="/create" exact component={FeaturedPost}/>      
+          <Route path="/" exact component={FeaturedPost}/>      
           <Route path="/user" component={Pricing}/>     
           <Route path="/createee" component={Contactform} />
           <Route path="/recent" component={Wof} />

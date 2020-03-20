@@ -14,11 +14,11 @@ import SVG2  from './Svg2'
 
 
 const sections = [
-    { title: 'Home', url: '/create',MainTitle:'SparkleAutoServices'},
+    { title: 'Home', url: '/',MainTitle:'SparkleAutoServices'},
     { title: 'Services', url: '/user' },
     { title: 'Deals', url: '/recent' },
-    { title: 'Book In Your Vehicle', url: '/createee',MainTitle:'SparkleAutoServices'},
-    { title: 'Make An Inquiry', url: '/Inquiry' },
+    { title: 'Book In Your Vehicle', url: '/',MainTitle:'SparkleAutoServices'},
+    // { title: 'Make An Inquiry', url: '/Inquiry' },
   ];
 
 const useStyles = makeStyles(theme => ({

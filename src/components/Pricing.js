@@ -52,8 +52,8 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(8, 0, 6),
   },
   cardHeader: {
-    backgroundColor:
-      theme.palette.type === 'dark' ? theme.palette.grey[700] : theme.palette.grey[200],
+    backgroundColor: 
+       theme.palette.type === 'dark' ? theme.palette.grey[700] : theme.palette.grey[200],
   },
   cardPricing: {
     display: 'flex',
@@ -75,56 +75,43 @@ const useStyles = makeStyles(theme => ({
 
 const tiers = [
   {
-    title: 'Free',
-    price: '0',
-    description: ['10 users included', '2 GB of storage', 'Help center access', 'Email support'],
+    title: 'Basic Service',
+    price: '89.99',
+    description: ['Check and set tyre pressures ', 'Check and top-up under bonnet fluids ', 'Lubricate doors and chassis ', 'Replace engine oil filter up to $20 '],
     buttonText: 'Sign up for free',
     buttonVariant: 'outlined',
   },
   {
-    title: 'Pro',
-    subheader: 'Most popular',
-    price: '15',
+    title: <span style={{textShadow:'0px 5px 10px yellow'}}>Recomended</span>,
+    subheader: 'Smart Service',
+    price: '129.99',
     description: [
-      '20 users included',
-      '10 GB of storage',
-      'Help center access',
-      'Priority email support',
+      'Check and set tyre pressures',
+      'Lubricate doors and chassis',
+      'Replace engine oil filter up to $20',
+      'Replace engine oil up to 4.5L standard oil',
+      'Reset service/maintenance light'
     ],
     buttonText: 'Get started',
     buttonVariant: 'contained',
   },
   {
     title: 'Enterprise',
-    price: '30',
+    price: '149.99',
     description: [
-      '50 users included',
-      '30 GB of storage',
-      'Help center access',
-      'Phone & email support',
+      'Check and set tyre pressure',
+      'Check and top-up under bonnet fluids ',
+      'Lubricate doors and chassis ',
+      'Oil flush or fuel additive',
+      'Replace engine oil filter up to $20 ',
+      'Replace engine oil up to 4.5L standard oil ',
+      'Rotate tyres  ',
     ],
     buttonText: 'Contact us',
     buttonVariant: 'outlined',
   },
 ];
-const footers = [
-  {
-    title: 'Company',
-    description: ['Team', 'History', 'Contact us', 'Locations'],
-  },
-  {
-    title: 'Features',
-    description: ['Cool stuff', 'Random feature', 'Team feature', 'Developer stuff', 'Another one'],
-  },
-  {
-    title: 'Resources',
-    description: ['Resource', 'Resource name', 'Another resource', 'Final resource'],
-  },
-  {
-    title: 'Legal',
-    description: ['Privacy policy', 'Terms of use'],
-  },
-];
+
 
 export default function Pricing() {
   const classes = useStyles();
@@ -189,7 +176,7 @@ export default function Pricing() {
                   <ul>
                     {tier.description.map(line => (
                       <Typography component="li" variant="subtitle1" align="center" key={line}>
-                        {line}
+                        {line}<hr style={{backgroundColor:"green"}}/>
                       </Typography>
                     ))}
                   </ul>
