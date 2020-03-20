@@ -10,11 +10,11 @@ import Grid from '@material-ui/core/Grid';
 import StarIcon from '@material-ui/icons/StarBorder';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+// import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';
-
+import {Link} from "react-router-dom";
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -78,7 +78,7 @@ const tiers = [
     title: 'Basic Service',
     price: '89.99',
     description: ['Check and set tyre pressures ', 'Check and top-up under bonnet fluids ', 'Lubricate doors and chassis ', 'Replace engine oil filter up to $20 '],
-    buttonText: 'Sign up for free',
+    buttonText: 'Book For Basic',
     buttonVariant: 'outlined',
   },
   {
@@ -92,7 +92,7 @@ const tiers = [
       'Replace engine oil up to 4.5L standard oil',
       'Reset service/maintenance light'
     ],
-    buttonText: 'Get started',
+    buttonText: 'Book For SMART',
     buttonVariant: 'contained',
   },
   {
@@ -107,7 +107,7 @@ const tiers = [
       'Replace engine oil up to 4.5L standard oil ',
       'Rotate tyres  ',
     ],
-    buttonText: 'Contact us',
+    buttonText: 'Book For Enterprise',
     buttonVariant: 'outlined',
   },
 ];
@@ -170,7 +170,7 @@ export default function Pricing() {
                       ${tier.price}
                     </Typography>
                     <Typography variant="h6" color="textSecondary">
-                      /mo
+                      
                     </Typography>
                   </div>
                   <ul>
@@ -182,8 +182,8 @@ export default function Pricing() {
                   </ul>
                 </CardContent>
                 <CardActions>
-                  <Button fullWidth variant={tier.buttonVariant} color="primary">
-                    {tier.buttonText}
+                  <Button fullWidth variant={tier.buttonVariant} color="secondary">
+                  <Link to="/services" > {tier.buttonText}</Link>
                   </Button>
                 </CardActions>
               </Card>

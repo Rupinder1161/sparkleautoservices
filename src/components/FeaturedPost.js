@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import Link from '@material-ui/core/Link';
+// import Link from '@material-ui/core/Link';
 import Posts from './Posts';
 import Pricing from './Pricing'
 import './main.css'
@@ -12,6 +12,7 @@ import Mainform from './Mainform'
 import Promise from './Promise'
 import classNames from 'classnames'
 import Contactform from './Contactform'
+import {Link} from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
   mainFeaturedPost: {
@@ -46,7 +47,7 @@ const useStyles = makeStyles(theme => ({
 const mainFeaturedPost = {
   title: 'Book With Us',
   description:
-    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
+   `GET FREE WOF ON YOUR FULL VEHICLE SERVICE`,
   image: 'https://cdn.pixabay.com/photo/2014/06/04/16/36/car-repair-362150_1280.jpg',
   imgText: 'main image description',
   linkText: 'Continue reading…',
@@ -65,14 +66,14 @@ export default function MainFeaturedPost() {
         <Grid item md={6}>
           <div className={classes.mainFeaturedPostContent}>
             <Typography component="h1" variant="h3" style={{color:"yellow", radius:"2px solid black",textShadow:"0px 30px 20px "}} gutterBottom>
-              <button className ={btn1}>{mainFeaturedPost.title}</button>
+             <Link to='/services'><button className ={btn1}>{mainFeaturedPost.title}</button></Link> 
             </Typography>
             <Typography variant="h5" color="inherit" paragraph>
               {mainFeaturedPost.description}
             </Typography>
-            <Link variant="subtitle1" href="#">
+            {/* <Link variant="subtitle1" href="#">
               {mainFeaturedPost.linkText}
-            </Link>
+            </Link> */}
           </div>
         </Grid>
       </Grid>
