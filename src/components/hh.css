@@ -12,14 +12,14 @@
   text-rendering: optimizeLegibility;
 }
 
-/* body {
+body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-size: 12px;
   line-height: 30px;
   color: rgb(96, 66, 196);
   background: whitesmoke;
-} */
+}
 
 .hello{
   height: 200px;
