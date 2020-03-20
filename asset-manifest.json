@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/sparkleautoservice/static/css/main.5b3ff61f.chunk.css",
-    "main.js": "/sparkleautoservice/static/js/main.8b987752.chunk.js",
-    "main.js.map": "/sparkleautoservice/static/js/main.8b987752.chunk.js.map",
-    "runtime-main.js": "/sparkleautoservice/static/js/runtime-main.6d194d0c.js",
-    "runtime-main.js.map": "/sparkleautoservice/static/js/runtime-main.6d194d0c.js.map",
-    "static/css/2.47e06e2e.chunk.css": "/sparkleautoservice/static/css/2.47e06e2e.chunk.css",
-    "static/js/2.98b775c5.chunk.js": "/sparkleautoservice/static/js/2.98b775c5.chunk.js",
-    "static/js/2.98b775c5.chunk.js.map": "/sparkleautoservice/static/js/2.98b775c5.chunk.js.map",
-    "index.html": "/sparkleautoservice/index.html",
-    "precache-manifest.e496df9fca5d3b27c9d40e017889b342.js": "/sparkleautoservice/precache-manifest.e496df9fca5d3b27c9d40e017889b342.js",
-    "service-worker.js": "/sparkleautoservice/service-worker.js",
-    "static/css/2.47e06e2e.chunk.css.map": "/sparkleautoservice/static/css/2.47e06e2e.chunk.css.map",
-    "static/css/main.5b3ff61f.chunk.css.map": "/sparkleautoservice/static/css/main.5b3ff61f.chunk.css.map",
-    "static/js/2.98b775c5.chunk.js.LICENSE.txt": "/sparkleautoservice/static/js/2.98b775c5.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/sparkleautoservice/static/media/logo.5d5d9eef.svg"
+    "main.css": "/sparkleautoservices/static/css/main.5b3ff61f.chunk.css",
+    "main.js": "/sparkleautoservices/static/js/main.08c5c9c8.chunk.js",
+    "main.js.map": "/sparkleautoservices/static/js/main.08c5c9c8.chunk.js.map",
+    "runtime-main.js": "/sparkleautoservices/static/js/runtime-main.a6b57e2b.js",
+    "runtime-main.js.map": "/sparkleautoservices/static/js/runtime-main.a6b57e2b.js.map",
+    "static/css/2.47e06e2e.chunk.css": "/sparkleautoservices/static/css/2.47e06e2e.chunk.css",
+    "static/js/2.98b775c5.chunk.js": "/sparkleautoservices/static/js/2.98b775c5.chunk.js",
+    "static/js/2.98b775c5.chunk.js.map": "/sparkleautoservices/static/js/2.98b775c5.chunk.js.map",
+    "index.html": "/sparkleautoservices/index.html",
+    "precache-manifest.30cabad4ac760745a7e8673cee647e90.js": "/sparkleautoservices/precache-manifest.30cabad4ac760745a7e8673cee647e90.js",
+    "service-worker.js": "/sparkleautoservices/service-worker.js",
+    "static/css/2.47e06e2e.chunk.css.map": "/sparkleautoservices/static/css/2.47e06e2e.chunk.css.map",
+    "static/css/main.5b3ff61f.chunk.css.map": "/sparkleautoservices/static/css/main.5b3ff61f.chunk.css.map",
+    "static/js/2.98b775c5.chunk.js.LICENSE.txt": "/sparkleautoservices/static/js/2.98b775c5.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/sparkleautoservices/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6d194d0c.js",
+    "static/js/runtime-main.a6b57e2b.js",
     "static/css/2.47e06e2e.chunk.css",
     "static/js/2.98b775c5.chunk.js",
     "static/css/main.5b3ff61f.chunk.css",
-    "static/js/main.8b987752.chunk.js"
+    "static/js/main.08c5c9c8.chunk.js"
   ]
 }
