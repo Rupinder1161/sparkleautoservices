@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
 * {
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -12,22 +12,27 @@
   text-rendering: optimizeLegibility;
 }
 
-body {
+/* body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-size: 12px;
   line-height: 30px;
   color: rgb(96, 66, 196);
   background: whitesmoke;
-}
+} */
 
-.container {
-  max-width: 500px;
-  width: 100%;
-  margin-top: 40px;
-  /* margin: 0  auto; */
-  padding-top: 80px;
+.hello{
+  height: 200px;
+
+  display: flex;
+   justify-content: center; 
+  align-items: center;
+  margin-top: 0px;
   
+  width: 100%;
+  height:500px;
+  
+   margin-top: 40px; 
   
 }
 
@@ -43,8 +48,9 @@ body {
 #contact {
   background: #F9F9F9;
   padding: 25px;
-  margin: 150px 0;
-  box-shadow: 0 0 20px 0 purple, 0 5px 5px 0 rgba(90, 97, 233, 0.24);
+  /* margin: 150px 0;  */
+   box-shadow: 0 0 20px 0 purple, 0 5px 5px 0 rgba(90, 97, 233, 0.24); 
+   margin: 30px;
 }
 
 #contact h3 {

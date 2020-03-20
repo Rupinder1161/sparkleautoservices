@@ -4,8 +4,9 @@ import './hh.css'
 export class Contactform extends Component {
     render() {
         return (
-            <div class="container">  
-                              <form id="contact" action="" method="post">
+            <div className="hello" >  
+            
+             <form id="contact" action="" method="post">
               <h3> Contact Form</h3>
               <h4>Contact us for custom quote</h4>
               <fieldset>
