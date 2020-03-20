@@ -20,6 +20,7 @@ import Posts from './components/Posts'
 import Promise from './components/Promise'
 import Contactform from './components/Contactform'
 import Wof from './components/Wof'
+import Mainform from './components/Mainform';
 
 function App() {
 
@@ -36,8 +37,10 @@ function App() {
           <Route path="/approoved" component={FeaturedPost}/> 
           <Route path="/services" component={Contactform}/>
         </Switch>
+        
       </div>
     </Router>
+    <Mainform />
    </div>
   );
 }

@@ -82,7 +82,7 @@ export default function MainFeaturedPost() {
     <Posts/>
     <Promise />
     <Pricing />
-    <Mainform/>
+    {/* <Mainform/> */}
     </div>
   );
 }
