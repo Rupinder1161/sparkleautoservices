@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ffb16d56f8b5b96c5d62ae8e279c2447",
+    "revision": "6a7d22439660452aacccd3ceb53b66ab",
     "url": "/sparkleautoservices/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sparkleautoservices/static/css/2.47e06e2e.chunk.css"
   },
   {
-    "revision": "22059c908eea12979e11",
-    "url": "/sparkleautoservices/static/css/main.5b3ff61f.chunk.css"
+    "revision": "0074c7c2215f5add5b98",
+    "url": "/sparkleautoservices/static/css/main.6199e637.chunk.css"
   },
   {
     "revision": "059d1a8b7eb03591683d",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sparkleautoservices/static/js/2.98b775c5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "22059c908eea12979e11",
-    "url": "/sparkleautoservices/static/js/main.39ef8988.chunk.js"
+    "revision": "0074c7c2215f5add5b98",
+    "url": "/sparkleautoservices/static/js/main.5270bd0f.chunk.js"
   },
   {
     "revision": "c9a704946bd0f5976eba",
