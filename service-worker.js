@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sparkleautoservices/precache-manifest.30cabad4ac760745a7e8673cee647e90.js"
+  "/sparkleautoservices/precache-manifest.b46a9bb414aa3de5c2b0e76437a71d56.js"
 );
 
 self.addEventListener('message', (event) => {
