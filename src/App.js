@@ -44,5 +44,7 @@ function App() {
    </div>
   );
 }
-
+// homepage":"https://Rupinder1161.github.io/sparkleautoservices",
+// "predeploy": "npm run build",
+    // "deploy": "gh-pages -d build",
 export default App;
