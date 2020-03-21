@@ -7,7 +7,7 @@ export class Contactform extends Component {
         return (
             <div className="hello" >  
             
-             <form id="contact" action="" method="post">
+             <form id="contact" name="contact" method="POST" data-netlify="true">
               <h3> Contact Form</h3>
               <h4>Contact us for custom quote</h4>
               <fieldset>
@@ -23,7 +23,7 @@ export class Contactform extends Component {
                 <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
               </fieldset>
               <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                <button name="submit" type="submit" id="contact-submit" >Submit</button>
               </fieldset>
               <p class="copyright">Or Contact Us On <a href="https://colorlib.com" target="_blank" title="Colorlib">04 26 00 116</a></p>
                           </form>
