@@ -5,6 +5,7 @@ import { Grid } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import './wof.css'
+import {Link} from "react-router-dom";
 
 const style = {
 
@@ -46,10 +47,8 @@ Get your WoF inspection done by a reliable team of mechanics - book it with Camb
                </Paper>
                </div>
               </div>
-              <Button  variant="contained"
-        color="primary" style={{marginTop:'50px'} } className='icon'> Get A Warrant of Fitness</Button>
-
-
+              <Link to='/services'><Button  variant="contained"
+        color="primary" style={{marginTop:'50px'} } className='icon'> Get A Warrant of Fitness</Button> </Link>
               </div>
 
 
