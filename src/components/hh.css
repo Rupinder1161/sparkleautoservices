@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
 * {
-  /* margin: 0; */
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -48,7 +48,7 @@ body {
 #contact {
   background: #F9F9F9;
   padding: 25px;
-  /* margin: 150px 0;  */
+  margin: 150px 0; 
    box-shadow: 0 0 20px 0 purple, 0 5px 5px 0 rgba(90, 97, 233, 0.24); 
    margin: 30px;
 }

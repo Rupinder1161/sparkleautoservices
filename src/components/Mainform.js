@@ -4,6 +4,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import classNames from 'classnames'
 import Typography from '@material-ui/core/Typography';
 import './mainform.css'
+import MapIcon from '@material-ui/icons/Map';
+import { Map } from 'google-maps-react';
+import EditLocationRoundedIcon from '@material-ui/icons/EditLocationRounded';
+import EmailIcon from '@material-ui/icons/Email';
+import EmojiTransportationIcon from '@material-ui/icons/EmojiTransportation';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+
+
+
+
+
+
+
+
 
 const facebook = classNames('fa','fa-facebook')
 
@@ -40,17 +56,17 @@ export class Mainform extends Component {
        
           <div>
           <i class="fa fa-map-marker"></i>
-          <p><span>20 Gracefield Road</span> Gracefield, Lower Hutt 5010</p>
+          <p><span style={{color:"green"}}><EditLocationRoundedIcon fontSize="large" color="golden" /></span> <br/> 20 Gracefield Road <br/> Gracefield, Lower Hutt 5010</p>
           </div>
        
           <div>
           <i class="fa fa-phone"></i>
-          <p>+1 555 123456</p>
+          <p>04 26 00 116</p>
           </div>
-       
+       <hr style={{color:'white'}}/>
           <div>
           <i class="fa fa-envelope"></i>
-          <p><a href="mailto:support@company.com">info@sparkleauto.co.nz</a></p>
+          <p><a href="mailto:info@sparkleauto.co.nz"> <span style={{color:"green" }}><EmailIcon color="white" fontSize="large"/></span><br/>  info@sparkleauto.co.nz</a></p>
           </div>
        
           </div>
@@ -58,16 +74,17 @@ export class Mainform extends Component {
           <div class="footer-right">
        
           <p class="footer-company-about">
+          <span style={{color:"green" }}> <EmojiTransportationIcon fontSize="large"/></span>
           <span>About the company</span>
         If you’re looking for auto repair in Lower Hutt,Wellington, you’ve found us.We work hard to earn your trust and loyalty. We know how important it is to find a car service you can rely on, so your satisfaction is our top priority each and every day.
           </p>
        
           <div class="footer-icons">
        
-          <a href="#"><i className={facebook}></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="#"><FacebookIcon /></a>
+          <a href="#"><TwitterIcon /></a>
+          <a href="#"><LinkedInIcon /></a>
+          {/* <a href="#"><i class="fa fa-github"></i></a> */}
        
           </div>
        
