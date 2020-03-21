@@ -16,7 +16,7 @@ import SVG2  from './Svg2'
 const sections = [
     { title: 'Home', url: '/',MainTitle:'SparkleAutoServices'},
     { title: 'Services', url: '/user' },
-    { title: 'Deals', url: '/recent' },
+    { title: 'Warrent of Fitness', url: '/recent' },
     { title: 'Book In Your Vehicle', url: '/createee',MainTitle:'SparkleAutoServices'},
     // { title: 'Make An Inquiry', url: '/Inquiry' },
   ];

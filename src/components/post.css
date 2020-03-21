@@ -1,0 +1,17 @@
+.mainDiv{
+    display: flex;
+    flex-flow: row wrap;
+    width:100%;
+    background-color: red;
+}
+
+.box1{
+    width:50%;
+    height:50px;
+     background-color: ivory;
+}
+.box2{
+    width:50%;
+    height:50px;
+    background-color: rgb(209, 209, 36);
+}
