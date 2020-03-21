@@ -19,16 +19,16 @@ export class Contactform extends Component {
               <h3> Contact Form</h3>
               <h4>Contact us for custom quote</h4>
               <fieldset>
-                  <input placeholder="Your name" type="text" tabindex="1" required autofocus />
+                  <input placeholder="Your name" type="text" name="name" tabindex="1" required autofocus />
               </fieldset>
               <fieldset>
-                  <input placeholder="Your Conatct Number" type="tel" tabindex="1" required autofocus />
+                  <input placeholder="Your Conatct Number" type="tel" name="number" tabindex="1" required autofocus />
               </fieldset>
               <fieldset>
-                  <input placeholder="Your Vehicle Model" type="text" tabindex="1" required autofocus />
+                  <input placeholder="Your Vehicle Model" type="text" name="carnumber" tabindex="1" required autofocus />
               </fieldset>
               <fieldset>
-                <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                <textarea  name="message" placeholder="Type your message here...." tabindex="5" required></textarea>
               </fieldset>
               <fieldset>
                 <button name="submit"
